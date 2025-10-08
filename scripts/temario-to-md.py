@@ -19,7 +19,7 @@ for row in csv.DictReader(args.input, delimiter='\t'):
 
 	temario[cat][subcat].append(tema)
 	
-print("""
+print(f"""
 # Temario
 
 Lista de temas para IOI/ICPC
@@ -27,6 +27,8 @@ Lista de temas para IOI/ICPC
 > Existen otros temarios. Por ejemplo:
 >
 > - <https://youkn0wwho.academy/topic-list>
+>
+> Podes contribuir a este temario sugiriendo cambios en <{REPO_URL}/blob/trunk/raw/temario.tsv>
 
 """)
 

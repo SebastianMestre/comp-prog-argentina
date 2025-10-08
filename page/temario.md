@@ -1,11 +1,13 @@
 
 # Temario
 
-Lista de temas IOI/ICPC
+Lista de temas para IOI/ICPC
 
 > Existen otros temarios. Por ejemplo:
 >
 > - <https://youkn0wwho.academy/topic-list>
+>
+> Podes contribuir a este temario sugiriendo cambios en <https://github.com/SebastianMestre/comp-prog-argentina/blob/trunk/raw/temario.tsv>
 
 
 
