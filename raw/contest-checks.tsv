@@ -1,0 +1,28 @@
+categoria	descripcion	forIOI	forICPC
+veredictos	obtener accepted en algun problema	si	si
+veredictos	obtener wrong answer en algun problema	si	si
+veredictos	obtener time limit en algun problema	si	si
+veredictos	obtener memory limit en algun problema	si	si
+veredictos	obtener runtime error en algun problema	si	si
+veredictos	obtener presentation error en algun problema	no	si
+maquina	ver si hay documentacion de C++	si	si
+maquina	configurar layout del teclado	si	si
+maquina	compilar localmente igual que el juez	si	si
+maquina	correr con address sanitizer	si	si
+maquina	correr con Valgrind	si	si
+maquina	correr con debugger	si	si
+varios	Enfocarse en el interactivo	si	si
+varios	Enfocarse en el output-only	si	no
+varios	ver donde queda el baño	si	si
+juez	ver limite de tamaño de archivo	si	si
+juez	ver time limit en ops/sec	si	si
+juez	ver profundidad de recursion	si	si
+juez	imprimir	no	si
+juez	enviar clarifications	si	si
+juez	usar script para submitear	si	si
+juez	usar script para compilar	si	si
+juez	ver version de C++ que usa el juez	si	si
+juez	ver version de Python que usa el juez	si	si
+juez	probar ifndef ONLINE_JUDGE	si	si
+juez	probar pragmas	si	si
+juez	Ver si hay int128 (`__int128` o `__int128_t`)	si	si

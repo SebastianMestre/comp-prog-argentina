@@ -3,11 +3,11 @@
 
 - [Sitio de ICPC Argentina]( https://icpc.com.ar/ )
 - [Sitio del Training Camp Argentina]( https://icpc.com.ar/tc/ )
-- [Material teórico]( material )
-- [Notebooks]( notebooks )
-- [Temario]( temario )
-- [Conjuntos de problemas]( problemsets )
+- [Material teórico]( page/material )
+- [Notebooks]( page/notebooks )
+- [Temario]( page/temario )
+- [Conjuntos de problemas]( page/problemsets )
 
 ## Para coaches
 
-- [Problemas con testcases]( testcases )
+- [Problemas con testcases]( page/testcases )
