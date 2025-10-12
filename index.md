@@ -2,11 +2,13 @@
 # Programacion competitiva Argentina
 
 - [Sitio de ICPC Argentina]( https://icpc.com.ar/ )
-- [Sitio del Training Camp Argentina]( https://icpc.com.ar/tc/ )
+
+- [Jueces en linea]( page/online-judge )
+- [Training camps]( page/training-camp )
 - [Material teórico]( page/material )
-- [Notebooks]( page/notebooks )
 - [Temario]( page/temario )
-- [Conjuntos de problemas]( page/problemsets )
+- [Notebooks]( page/notebook )
+- [Otros]( page/misc )
 
 ## Para coaches
 
