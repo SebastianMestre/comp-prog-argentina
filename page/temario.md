@@ -12,344 +12,396 @@ Lista de temas para IOI/ICPC
 
 
 
-## Razonamiento formal
-
-- Modelado y formalización de problemas
-- Razonamiento ecuacional sobre programas
-- Razonamiento axiomático sobre programas (lógica de Hoare)
-
-## Técnicas de resolución
-
-- Generalización y reducción
-- Invariantes
-- Monotonía
-- Análisis de elementos especiales (e.g. analizar máximos y mínimos)
-- Coloreos (e.g. cubrir un tablero de ajedrez sin esquinas con piezas de dominó)
-- Principio del palomar (e.g. mayor hueco de menor a mayor en O(N))
-- Inversión del problema ("mirar para atras", e.g. perros de OIA 2019)
-- Separación en componentes independientes
-
-## Grafos
-
-- Nociones elementales y definiciones de teoria de grafos
-- Circuito euleriano, teorema de existencia <=>, algoritmos para construirlo
-- Circuito hamiltoniano (NP completo en general), teoremas de Ore / Dirac
-- Representación de grafos en memoria
-- Matriz de Adyacencia
-- Matriz de Incidencia
-- Listas de Adyacencia
-- Lista de incidencia
-- Grafo Implícito
-
-### BFS
-
-- Basico.
-- BFS con cola de dos puntas [Aristas 0 y 1]
-- BFS con K+1 bolsas [aristas 0..K]
-
-### DFS
-
-- Con stack
-- Recursivo
-- Back Edges
-- Tree Edges
-- Forward Edges
-- Cross Edges
-
-### Dijkstra
-
-- En N^2
-- En (N + M) lg N
-- Distancia Min-Max (Prim)
-
-### Bellman-Ford
-
-- Vision como programacion dinamica.
-- Implementacion tipica.
-- Variante para contar caminos entre pares de nodos.
-- Deteccion y tratamiento de ciclos negativos
-
-### Floyd-Warshall
-
-- Vision como programacion dinamica.
-- Implementacion tipica.
-- Variante para contar caminos entre pares de nodos.
-- Producto de matrices de adyacencia / Potencias de la matriz de adyacencia.
-- Deteccion y tratamiento de ciclos negativos
-
-### Reconstruir caminos
-
-- Guardando padres
-- Chequeando la cuentita de la DP
-
-### Kruskal
-
-- Descripción e implementación, con referencia a Union-Find
-- Relación del Minimum Spanning Tree con la distancia Min-Max.
-- Aplicación a calcular la distancia min-max todos contra todos en N^2
-- Solución alternativa para el mismo problema: hacerlo en el mismo Kruskal que calcula el MST
-
-### Flujo y derivados
-
-- Matching Maximo Bipartito O(VE)
-- Flujo Maximo / Corte Minimo
-- Edmonds-Karp
-- Dinitz
-- Algoritmos de Preflow-Push
-- Manejo, entendimiento y manipulación de la red residual de un grafo.
-- Teoremas de König, Hall y Menger.
-- Mínimo Cubrimiento por Caminos. Mínima Partición en Caminos. Teorema de Dilworth
-- Flujo de costo minimo.
-- Vertex cover / Independent set en grafo bipartito
-
-### DAGs
-
-- Ordenamiento Topologico
-- Clausura transitiva (aplica a cualquier grafo pero es muy común en DAGs)
-- Componentes Biconexas (Puntos de articulación, puentes)
-- Componentes Fuertemente Conexas
-- Camino/Ciclo euleriano
-
-### Árboles
-
-- Detección,recorrido.
-- Representación de arbol con raiz: Padre de cada nodo
-- Representación de arbol con raiz:Lista de adyacencia del dirigido "bajando desde la raíz".
-- Radio, centro y diámetro de un árbol en tiempo lineal.
-
-### Grafos planares
-
-- Fórmula de Euler
-- Los grafos planares son ralos
-- Dualidad
-- Construir Grafo dual de un grafo planar (dado el embedding)
-- Max-clique en grafo planar
-
-## Análisis de complejidad
-
-- Entendimiento de la notacion asintotica (La O grande de "O(N)")
-- Analisis amortizado de complejidad
-- Nocion de P, NP, NP completo, algoritmo polinomial, etc
-- Problemas NP completos conocidos (Camino hamiltoniano, TSP, Maximum independent set, Minimum dominating set, subset sum, etc.)
-- Problemas que no se sabe que sean P ni NP completo (Factorización entera, logaritmo discreto, isomorfismo de grafos)
-
-## Ordenamiento
-
-- Busqueda lineal y busqueda binaria (con LA RECETA)
-- Counting Sort
-- MergeSort
-- QuickSort
-- Mediana (o elemento iesimo) en tiempo lineal esperado (n\_th element)
-- HeapSort
-- BubbleSort
-- InsertionSort
-- RadixSort
-
-## Estructuras de datos
-
-- Arreglos
-- STL (set, multiset, map, multimap, vector, queue, stack, deque, priority\_queue, list, etc)
-- Policy based data structures de GCC (en especial indexed\_set)
-- Listas enlazadas
-- Colas
-- Pilas
-- Tries
-- Hashing
-- Tablas Aditivas (prefix sums)
-- Binary Index Tree (Fenwick Tree)
-- Árbol binario de búsqueda
-- ABB balanceado (por ej, Treap)
-- Heap (para priority queue), heapsort, heapify en O(N)
-- Union Find (Implementacion con listas y con arbol)
-- RMQ (Segment tree sobre arreglo)
-- Sliding Windows, Sliding-RMQ (para en O(N) calcular el RMQ de subarreglos de un tamaño K dado)
-- Binary lifting en árbol con raíz
-- LCA en O(lg n) mediante Euler Tour + RMQ
-- LCA en O(lg n) mediante binary lifting
-- Distancias en un arbol en O(log N) con LCA
-- Estructuras de datos persistentes (con path copying)
-- RMQ/Fenwick 2D
-- Heavy Light Decomposition
-- Estructuras de datos para arboles dinamicos (link-cut trees)
-- Principio small-to-large
-
-## Algoritmos con sqrt()
-
-- sqrt-decomposition: Separar la secuencia del input en bloques de sqrt(N)
-- Algoritmo de MO: separar queries por posicion inicial en bloques de sqrt(N)
-- Combinar dos algoritmos O(nk) y O(n^2/k)
-- Agrupar updates en bloques de sqrt(U), hacer queries iterando por las updates dentro de cada bloque
-- Hay <= sqrt(N) elementos que aparecen >= sqrt(N) veces
-- Si una suma es igual a N, hay <= sqrt(N) valores distintos
-
-## Strings
-
-- Knuth Morris Pratt (KMP), y su tablita de bordes.
-- Rabin-Karp, y uso del concepto de hash en general.
-- xor-hashing y sum-hashing con una tabla de números aleatorios
-- Suffix Array (Algoritmo de Larsson y Sadakane), LCP
-
-## Programacion Dinámica
-
-- Recursion (en matematica, en programacion, recursion mutua)
-- Maxima subsecuencia creciente (En O(n^2), y su variante en O(n lg n))
-- Cálculo del triangulo de pascal
-- Longest common subsequence
-- Edit distance mínima (La común, y permitiendo swaps adyacentes)
-- Producto de matrices con costo minimo
-- "En una matriz yendo de una esquina a la otra solo bajando y para la derecha, maximizar la suma de las casillas visitadas."
-- Knapsack (Problema de la mochila), Subset Sum
-- Dar vuelto usando una cantidad minima de monedas
-- Optimal Binary Search Tree en O(n^3) y O(n^2) (Knuth optimization)
-- Divide and conquer optimization
-- Dada una string par de {,(,[,],),} dar la minima cantidad de cambios necesarios para que sea valida.
-- Dinámicas con máscaras de bits: TSP y muchas otras.
-- Dinámicas con "frente": Poner fichitas / tubitos en un tablero, y muchas otras
-
-## Matemática
-
-- Punto flotante: Conocerlos, saber que existe el error, cuentitas basicas, uso de EPSILON en los if
-- Operaciones aritmeticas con enteros de longitud arbitraria
-
-### Álgebra
-
-- Potenciacion logaritmica (binary lifting)
-- Sumas de progresiones aritmeticas y geometricas con binary lifting
-- Recurrencias lineales
-- Sistemas de ecuaciones lineales (algoritmo de Gauss)
-- Calculo de determinantes, matriz inversa (algoritmo de Gauss)
-- Funciones generatrices
-
-### Combinatoria y Probabilidad
-
-- Relacion entre combinatoria y probabilidad
-- Principios de la suma y del producto
-- Coeficientes binomiales / triangulo de pascal
-- Bolitas y palitos
-- Inclusion-exclusion
-- Linealidad de la esperanza / técnica "contribution to the sum"
-- Distribución de la suma de dos variables aleatorias (convolucion)
-- Convolucion rápida usando FFT
-- Números de Catalan
-- Cadenas de Markov
-- Young Tableaux
-
-### Teoría de números
-
-- Teorema fundamental de la aritmetica
-- Aritmetica modular
-- MCD (Algoritmo de euclides)
-- Inverso Modular (Con euclides extendido o con pequeño teorema de Fermat)
-- Teorema Chino del Resto
-- Producto de matrices
-- Chequeo de primalidad raiz(N)
-- Criba de eratostenes
-- Chequeo de primalidad eficiente probabilistico (Miller-Rabin)
-- Orden de un elemento en (N_p,*), raices primitivas
-- Funcion phi de Euler
-- Funciones multiplicativas, función de Mobius
-
-## Geometria
-
-- Vectores (Suma, Resta)
-- Producto escalar
-- Norma, distancia euclidea (pitagoras)
-- Producto vectorial
-- Area de triangulos / paralelogramos, detección de sentido de giro
-- Area de poligonos
-- Representaciones de recta, segmento, etc estilo lineal (vectores / puntos + direccion)
-- Chequear si un punto esta en un poligono / en un segmento / en una recta / en un plano
-- Chequear si esta en poligono convexo en lg N
-- Chequear si está en un poligono no convexo en O(N)
-- Teorema de Pick
-- Compresion de coordenadas
-- Par de puntos mas cercano en O(n lg n)
-- Capsula convexa en O(n lg n)
-- Par de puntos mas lejano en O(n lg n), O(n) dada ya la capsula convexa
-- Rotating calipers
-- Interseccion de dos segmentos
-- Distancia entre dos segmentos
-- Sweep Line (Es MUY importante la idea de sweep line / sweep circle / sweep sarasa)
-- Dualidad punto / linea
-- Interseccion circulo - circulo y circulo - recta
-- Suma de Minkowski, aplicación a distancia entre polígonos convexos
-- Convex Hull Trick
-- Clasificar/contar puntos dominados/dominantes
-
-## Divide and conquer
-
-- Elemento mayoria en n lg n usando *solamente* comparaciones por igualdad entre elementos.
-- Par de puntos mas cercano en O(n lg n)
-- Strassen
-- Karatsuba
-- Greedies
-- Dar vuelto usando una cantidad minima de monedas
-- Ordenamiento de trabajos con distintos tiempos de ejecución para minimizar el tiempo de finalización promedio.
-- Optimo cubrimiento de intervalo por subintervalos.
-- Codigos de Huffman
-- Maxima subsecuencia creciente (resolviendo "mínima partición en subsecuencias no crecientes" + Dilworth)
-
-## Backtracking
-
-- Fuerza Bruta
-- Fuerza Bruta sobre permutaciones (next_permutation)
-- Backtracking con cantidad de pasos fija (for if for if for if)
-- Backtracking con cantidad de pasos variable (recursiva)
-- Backtracking sobre permutaciones (recursiva)
-- Backtracking sobre subconjuntos (recursiva)
-- Optimización "Branch & Bound"
-- Problema de las N reinas
-- Cubrir un tablero con fichitas. (e.g. Codeforces 143E)
-- Sudoku
-
-## Teoría de juegos
-
-- Propiedad Universal de las posiciones P/G
-- Cálculo con DP de posiciones ganadoras y perdedoras.
-- Algoritmo minimax para juegos de suma cero de informacion perfecta.
-- Idea de la criba para llenar tablitas como la anterior.
-- Variante de la DP donde el que gana trata de ganar rápido y el que pierde de perder lento.
-- Juegos combinatorios imparciales: Sumar de juegos.
-- Nim. Misére Nim.
-- Grundy Numbers, cálculo de los grundy numbers en tiempo lineal en el grafo, con DP. Grundy Number de una suma de juegos.
-
-## Teoría de lenguajes
-
-- Gramatica BNF
-- Autómatas Finitos
-- Expresiones Regulares
-- Parsing Recursivo Descendente predictivo (con "prediccion artesanal")
-- Gramaticas libres de contexto
-
-## Interactivos
-
-- Problemas estilo "descubrir el secreto"
-- Problemas estilo "queries online"
-- Problemas estilo "juego contra el juez"
-- Heuristica de repartir parejo
-- Teoria de la informacion, bits, entropia
-
-## Permutaciones
-
-- Composicion
-- Representacion de cosas como permutaciones (e.g. Rubik, o cualquier grupo)
-- Transposiciones (swaps)
-- Inversiones
-- Contar inversiones en O(N log N) (con mergesort o con Fenwick tree)
-- Ciclos
-- Paridad (Mediante inversiones y mediante ciclos)
-
-## Truquitos
-
-
-### Estructuras de datos
-
-- Sumas de prefijos de cadenas de paréntesis balanceadas
-
-### Grafos
-
-- Al Reconstruir caminos, dar vuelta origen y destino (y trasponer el grafo si es dirigido) así al recorrer los padres queda el camino al derecho.
-
-### Matemática
-
-- Gauss rápido para matrices banda: Bidiagonales, Tridiagonales, Adyacencias en una grilla rectangular.
+<details>
+ <summary>Razonamiento formal</summary>
+ <ul>
+  <li>Modelado y formalización de problemas</li>
+  <li>Razonamiento ecuacional sobre programas</li>
+  <li>Razonamiento axiomático sobre programas (lógica de Hoare)</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Técnicas de resolución</summary>
+ <ul>
+  <li>Generalización y reducción</li>
+  <li>Invariantes</li>
+  <li>Monotonía</li>
+  <li>Análisis de elementos especiales (e.g. analizar máximos y mínimos)</li>
+  <li>Coloreos (e.g. cubrir un tablero de ajedrez sin esquinas con piezas de dominó)</li>
+  <li>Principio del palomar (e.g. mayor hueco de menor a mayor en O(N))</li>
+  <li>Inversión del problema ("mirar para atras", e.g. perros de OIA 2019)</li>
+  <li>Separación en componentes independientes</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Grafos</summary>
+ <ul>
+  <li>Nociones elementales y definiciones de teoria de grafos</li>
+  <li>Circuito euleriano, teorema de existencia <=>, algoritmos para construirlo</li>
+  <li>Circuito hamiltoniano (NP completo en general), teoremas de Ore / Dirac</li>
+  <li>Representación de grafos en memoria</li>
+  <li>Matriz de Adyacencia</li>
+  <li>Matriz de Incidencia</li>
+  <li>Listas de Adyacencia</li>
+  <li>Lista de incidencia</li>
+  <li>Grafo Implícito</li>
+ </ul>
+<h3>BFS</h3>
+ <ul>
+  <li>Basico.</li>
+  <li>BFS con cola de dos puntas [Aristas 0 y 1]</li>
+  <li>BFS con K+1 bolsas [aristas 0..K]</li>
+ </ul>
+<h3>DFS</h3>
+ <ul>
+  <li>Con stack</li>
+  <li>Recursivo</li>
+  <li>Back Edges</li>
+  <li>Tree Edges</li>
+  <li>Forward Edges</li>
+  <li>Cross Edges</li>
+ </ul>
+<h3>Dijkstra</h3>
+ <ul>
+  <li>En N^2</li>
+  <li>En (N + M) lg N</li>
+  <li>Distancia Min-Max (Prim)</li>
+ </ul>
+<h3>Bellman-Ford</h3>
+ <ul>
+  <li>Vision como programacion dinamica.</li>
+  <li>Implementacion tipica.</li>
+  <li>Variante para contar caminos entre pares de nodos.</li>
+  <li>Deteccion y tratamiento de ciclos negativos</li>
+ </ul>
+<h3>Floyd-Warshall</h3>
+ <ul>
+  <li>Vision como programacion dinamica.</li>
+  <li>Implementacion tipica.</li>
+  <li>Variante para contar caminos entre pares de nodos.</li>
+  <li>Producto de matrices de adyacencia / Potencias de la matriz de adyacencia.</li>
+  <li>Deteccion y tratamiento de ciclos negativos</li>
+ </ul>
+<h3>Reconstruir caminos</h3>
+ <ul>
+  <li>Guardando padres</li>
+  <li>Chequeando la cuentita de la DP</li>
+ </ul>
+<h3>Kruskal</h3>
+ <ul>
+  <li>Descripción e implementación, con referencia a Union-Find</li>
+  <li>Relación del Minimum Spanning Tree con la distancia Min-Max.</li>
+  <li>Aplicación a calcular la distancia min-max todos contra todos en N^2</li>
+  <li>Solución alternativa para el mismo problema: hacerlo en el mismo Kruskal que calcula el MST</li>
+ </ul>
+<h3>Flujo y derivados</h3>
+ <ul>
+  <li>Matching Maximo Bipartito O(VE)</li>
+  <li>Flujo Maximo / Corte Minimo</li>
+  <li>Edmonds-Karp</li>
+  <li>Dinitz</li>
+  <li>Algoritmos de Preflow-Push</li>
+  <li>Manejo, entendimiento y manipulación de la red residual de un grafo.</li>
+  <li>Teoremas de König, Hall y Menger.</li>
+  <li>Mínimo Cubrimiento por Caminos. Mínima Partición en Caminos. Teorema de Dilworth</li>
+  <li>Flujo de costo minimo.</li>
+  <li>Vertex cover / Independent set en grafo bipartito</li>
+ </ul>
+<h3>DAGs</h3>
+ <ul>
+  <li>Ordenamiento Topologico</li>
+  <li>Clausura transitiva (aplica a cualquier grafo pero es muy común en DAGs)</li>
+  <li>Componentes Biconexas (Puntos de articulación, puentes)</li>
+  <li>Componentes Fuertemente Conexas</li>
+  <li>Camino/Ciclo euleriano</li>
+ </ul>
+<h3>Árboles</h3>
+ <ul>
+  <li>Detección,recorrido.</li>
+  <li>Representación de arbol con raiz: Padre de cada nodo</li>
+  <li>Representación de arbol con raiz:Lista de adyacencia del dirigido "bajando desde la raíz".</li>
+  <li>Radio, centro y diámetro de un árbol en tiempo lineal.</li>
+ </ul>
+<h3>Grafos planares</h3>
+ <ul>
+  <li>Fórmula de Euler</li>
+  <li>Los grafos planares son ralos</li>
+  <li>Dualidad</li>
+  <li>Construir Grafo dual de un grafo planar (dado el embedding)</li>
+  <li>Max-clique en grafo planar</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Análisis de complejidad</summary>
+ <ul>
+  <li>Entendimiento de la notacion asintotica (La O grande de "O(N)")</li>
+  <li>Analisis amortizado de complejidad</li>
+  <li>Nocion de P, NP, NP completo, algoritmo polinomial, etc</li>
+  <li>Problemas NP completos conocidos (Camino hamiltoniano, TSP, Maximum independent set, Minimum dominating set, subset sum, etc.)</li>
+  <li>Problemas que no se sabe que sean P ni NP completo (Factorización entera, logaritmo discreto, isomorfismo de grafos)</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Ordenamiento</summary>
+ <ul>
+  <li>Busqueda lineal y busqueda binaria (con LA RECETA)</li>
+  <li>Counting Sort</li>
+  <li>MergeSort</li>
+  <li>QuickSort</li>
+  <li>Mediana (o elemento iesimo) en tiempo lineal esperado (n\_th element)</li>
+  <li>HeapSort</li>
+  <li>BubbleSort</li>
+  <li>InsertionSort</li>
+  <li>RadixSort</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Estructuras de datos</summary>
+ <ul>
+  <li>Arreglos</li>
+  <li>STL (set, multiset, map, multimap, vector, queue, stack, deque, priority\_queue, list, etc)</li>
+  <li>Policy based data structures de GCC (en especial indexed\_set)</li>
+  <li>Listas enlazadas</li>
+  <li>Colas</li>
+  <li>Pilas</li>
+  <li>Tries</li>
+  <li>Hashing</li>
+  <li>Tablas Aditivas (prefix sums)</li>
+  <li>Binary Index Tree (Fenwick Tree)</li>
+  <li>Árbol binario de búsqueda</li>
+  <li>ABB balanceado (por ej, Treap)</li>
+  <li>Heap (para priority queue), heapsort, heapify en O(N)</li>
+  <li>Union Find (Implementacion con listas y con arbol)</li>
+  <li>RMQ (Segment tree sobre arreglo)</li>
+  <li>Sliding Windows, Sliding-RMQ (para en O(N) calcular el RMQ de subarreglos de un tamaño K dado)</li>
+  <li>Binary lifting en árbol con raíz</li>
+  <li>LCA en O(lg n) mediante Euler Tour + RMQ</li>
+  <li>LCA en O(lg n) mediante binary lifting</li>
+  <li>Distancias en un arbol en O(log N) con LCA</li>
+  <li>Estructuras de datos persistentes (con path copying)</li>
+  <li>RMQ/Fenwick 2D</li>
+  <li>Heavy Light Decomposition</li>
+  <li>Estructuras de datos para arboles dinamicos (link-cut trees)</li>
+  <li>Principio small-to-large</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Algoritmos con sqrt()</summary>
+ <ul>
+  <li>sqrt-decomposition: Separar la secuencia del input en bloques de sqrt(N)</li>
+  <li>Algoritmo de MO: separar queries por posicion inicial en bloques de sqrt(N)</li>
+  <li>Combinar dos algoritmos O(nk) y O(n^2/k)</li>
+  <li>Agrupar updates en bloques de sqrt(U), hacer queries iterando por las updates dentro de cada bloque</li>
+  <li>Hay <= sqrt(N) elementos que aparecen >= sqrt(N) veces</li>
+  <li>Si una suma es igual a N, hay <= sqrt(N) valores distintos</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Strings</summary>
+ <ul>
+  <li>Knuth Morris Pratt (KMP), y su tablita de bordes.</li>
+  <li>Rabin-Karp, y uso del concepto de hash en general.</li>
+  <li>xor-hashing y sum-hashing con una tabla de números aleatorios</li>
+  <li>Suffix Array (Algoritmo de Larsson y Sadakane), LCP</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Programacion Dinámica</summary>
+ <ul>
+  <li>Recursion (en matematica, en programacion, recursion mutua)</li>
+  <li>Maxima subsecuencia creciente (En O(n^2), y su variante en O(n lg n))</li>
+  <li>Cálculo del triangulo de pascal</li>
+  <li>Longest common subsequence</li>
+  <li>Edit distance mínima (La común, y permitiendo swaps adyacentes)</li>
+  <li>Producto de matrices con costo minimo</li>
+  <li>"En una matriz yendo de una esquina a la otra solo bajando y para la derecha, maximizar la suma de las casillas visitadas."</li>
+  <li>Knapsack (Problema de la mochila), Subset Sum</li>
+  <li>Dar vuelto usando una cantidad minima de monedas</li>
+  <li>Optimal Binary Search Tree en O(n^3) y O(n^2) (Knuth optimization)</li>
+  <li>Divide and conquer optimization</li>
+  <li>Dada una string par de {,(,[,],),} dar la minima cantidad de cambios necesarios para que sea valida.</li>
+  <li>Dinámicas con máscaras de bits: TSP y muchas otras.</li>
+  <li>Dinámicas con "frente": Poner fichitas / tubitos en un tablero, y muchas otras</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Matemática</summary>
+ <ul>
+  <li>Punto flotante: Conocerlos, saber que existe el error, cuentitas basicas, uso de EPSILON en los if</li>
+  <li>Operaciones aritmeticas con enteros de longitud arbitraria</li>
+ </ul>
+<h3>Álgebra</h3>
+ <ul>
+  <li>Potenciacion logaritmica (binary lifting)</li>
+  <li>Sumas de progresiones aritmeticas y geometricas con binary lifting</li>
+  <li>Recurrencias lineales</li>
+  <li>Sistemas de ecuaciones lineales (algoritmo de Gauss)</li>
+  <li>Calculo de determinantes, matriz inversa (algoritmo de Gauss)</li>
+  <li>Funciones generatrices</li>
+ </ul>
+<h3>Combinatoria y Probabilidad</h3>
+ <ul>
+  <li>Relacion entre combinatoria y probabilidad</li>
+  <li>Principios de la suma y del producto</li>
+  <li>Coeficientes binomiales / triangulo de pascal</li>
+  <li>Bolitas y palitos</li>
+  <li>Inclusion-exclusion</li>
+  <li>Linealidad de la esperanza / técnica "contribution to the sum"</li>
+  <li>Distribución de la suma de dos variables aleatorias (convolucion)</li>
+  <li>Convolucion rápida usando FFT</li>
+  <li>Números de Catalan</li>
+  <li>Cadenas de Markov</li>
+  <li>Young Tableaux</li>
+ </ul>
+<h3>Teoría de números</h3>
+ <ul>
+  <li>Teorema fundamental de la aritmetica</li>
+  <li>Aritmetica modular</li>
+  <li>MCD (Algoritmo de euclides)</li>
+  <li>Inverso Modular (Con euclides extendido o con pequeño teorema de Fermat)</li>
+  <li>Teorema Chino del Resto</li>
+  <li>Producto de matrices</li>
+  <li>Chequeo de primalidad raiz(N)</li>
+  <li>Criba de eratostenes</li>
+  <li>Chequeo de primalidad eficiente probabilistico (Miller-Rabin)</li>
+  <li>Orden de un elemento en (N_p,*), raices primitivas</li>
+  <li>Funcion phi de Euler</li>
+  <li>Funciones multiplicativas, función de Mobius</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Geometria</summary>
+ <ul>
+  <li>Vectores (Suma, Resta)</li>
+  <li>Producto escalar</li>
+  <li>Norma, distancia euclidea (pitagoras)</li>
+  <li>Producto vectorial</li>
+  <li>Area de triangulos / paralelogramos, detección de sentido de giro</li>
+  <li>Area de poligonos</li>
+  <li>Representaciones de recta, segmento, etc estilo lineal (vectores / puntos + direccion)</li>
+  <li>Chequear si un punto esta en un poligono / en un segmento / en una recta / en un plano</li>
+  <li>Chequear si esta en poligono convexo en lg N</li>
+  <li>Chequear si está en un poligono no convexo en O(N)</li>
+  <li>Teorema de Pick</li>
+  <li>Compresion de coordenadas</li>
+  <li>Par de puntos mas cercano en O(n lg n)</li>
+  <li>Capsula convexa en O(n lg n)</li>
+  <li>Par de puntos mas lejano en O(n lg n), O(n) dada ya la capsula convexa</li>
+  <li>Rotating calipers</li>
+  <li>Interseccion de dos segmentos</li>
+  <li>Distancia entre dos segmentos</li>
+  <li>Sweep Line (Es MUY importante la idea de sweep line / sweep circle / sweep sarasa)</li>
+  <li>Dualidad punto / linea</li>
+  <li>Interseccion circulo - circulo y circulo - recta</li>
+  <li>Suma de Minkowski, aplicación a distancia entre polígonos convexos</li>
+  <li>Convex Hull Trick</li>
+  <li>Clasificar/contar puntos dominados/dominantes</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Divide and conquer</summary>
+ <ul>
+  <li>Elemento mayoria en n lg n usando *solamente* comparaciones por igualdad entre elementos.</li>
+  <li>Par de puntos mas cercano en O(n lg n)</li>
+  <li>Strassen</li>
+  <li>Karatsuba</li>
+  <li>Greedies</li>
+  <li>Dar vuelto usando una cantidad minima de monedas</li>
+  <li>Ordenamiento de trabajos con distintos tiempos de ejecución para minimizar el tiempo de finalización promedio.</li>
+  <li>Optimo cubrimiento de intervalo por subintervalos.</li>
+  <li>Codigos de Huffman</li>
+  <li>Maxima subsecuencia creciente (resolviendo "mínima partición en subsecuencias no crecientes" + Dilworth)</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Backtracking</summary>
+ <ul>
+  <li>Fuerza Bruta</li>
+  <li>Fuerza Bruta sobre permutaciones (next_permutation)</li>
+  <li>Backtracking con cantidad de pasos fija (for if for if for if)</li>
+  <li>Backtracking con cantidad de pasos variable (recursiva)</li>
+  <li>Backtracking sobre permutaciones (recursiva)</li>
+  <li>Backtracking sobre subconjuntos (recursiva)</li>
+  <li>Optimización "Branch & Bound"</li>
+  <li>Problema de las N reinas</li>
+  <li>Cubrir un tablero con fichitas. (e.g. Codeforces 143E)</li>
+  <li>Sudoku</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Teoría de juegos</summary>
+ <ul>
+  <li>Propiedad Universal de las posiciones P/G</li>
+  <li>Cálculo con DP de posiciones ganadoras y perdedoras.</li>
+  <li>Algoritmo minimax para juegos de suma cero de informacion perfecta.</li>
+  <li>Idea de la criba para llenar tablitas como la anterior.</li>
+  <li>Variante de la DP donde el que gana trata de ganar rápido y el que pierde de perder lento.</li>
+  <li>Juegos combinatorios imparciales: Sumar de juegos.</li>
+  <li>Nim. Misére Nim.</li>
+  <li>Grundy Numbers, cálculo de los grundy numbers en tiempo lineal en el grafo, con DP. Grundy Number de una suma de juegos.</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Teoría de lenguajes</summary>
+ <ul>
+  <li>Gramatica BNF</li>
+  <li>Autómatas Finitos</li>
+  <li>Expresiones Regulares</li>
+  <li>Parsing Recursivo Descendente predictivo (con "prediccion artesanal")</li>
+  <li>Gramaticas libres de contexto</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Interactivos</summary>
+ <ul>
+  <li>Problemas estilo "descubrir el secreto"</li>
+  <li>Problemas estilo "queries online"</li>
+  <li>Problemas estilo "juego contra el juez"</li>
+  <li>Heuristica de repartir parejo</li>
+  <li>Teoria de la informacion, bits, entropia</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Permutaciones</summary>
+ <ul>
+  <li>Composicion</li>
+  <li>Representacion de cosas como permutaciones (e.g. Rubik, o cualquier grupo)</li>
+  <li>Transposiciones (swaps)</li>
+  <li>Inversiones</li>
+  <li>Contar inversiones en O(N log N) (con mergesort o con Fenwick tree)</li>
+  <li>Ciclos</li>
+  <li>Paridad (Mediante inversiones y mediante ciclos)</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Truquitos</summary>
+<h3>Estructuras de datos</h3>
+ <ul>
+  <li>Sumas de prefijos de cadenas de paréntesis balanceadas</li>
+ </ul>
+<h3>Grafos</h3>
+ <ul>
+  <li>Al Reconstruir caminos, dar vuelta origen y destino (y trasponer el grafo si es dirigido) así al recorrer los padres queda el camino al derecho.</li>
+ </ul>
+<h3>Matemática</h3>
+ <ul>
+  <li>Gauss rápido para matrices banda: Bidiagonales, Tridiagonales, Adyacencias en una grilla rectangular.</li>
+ </ul>
+</details>

@@ -18,7 +18,7 @@ for row in csv.DictReader(args.input, delimiter='\t'):
 	tema = row['Tema']
 
 	temario[cat][subcat].append(tema)
-	
+
 print(f"""
 # Temario
 
@@ -26,6 +26,7 @@ Lista de temas para IOI/ICPC
 
 > Existen otros temarios. Por ejemplo:
 >
+> - [Temario oficial de IOI]( https://ioinformatics.org/page/syllabus/12 )
 > - <https://youkn0wwho.academy/topic-list>
 >
 > Podes contribuir a este temario sugiriendo cambios en <{REPO_URL}/blob/trunk/raw/temario.tsv>
@@ -33,17 +34,20 @@ Lista de temas para IOI/ICPC
 """)
 
 for cat in temario:
+
 	print('')
-	print('##', cat)
-	print('')
+	print("<details>")
+	print(f" <summary>{cat}</summary>")
 
 	for subcat in temario[cat]:
 
-		if subcat != '':
-			print('')
-			print('###', subcat)
-			print('')
+		if subcat != "":
+			print(f"<h3>{subcat}</h3>")
 
+		print(" <ul>")
 		for tema in temario[cat][subcat]:
-			print('-', tema)
+			print(f"  <li>{tema}</li>")
+		print(" </ul>")
+
+	print("</details>")
 
