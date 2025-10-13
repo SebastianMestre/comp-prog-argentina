@@ -37,11 +37,17 @@ Lista de temas para IOI/ICPC
 
 <details>
  <summary>Grafos</summary>
+<h3>Basico</h3>
  <ul>
   <li>Nociones elementales y definiciones de teoria de grafos</li>
+ </ul>
+<h3>Caminos especiales</h3>
+ <ul>
   <li>Circuito euleriano, teorema de existencia <=>, algoritmos para construirlo</li>
-  <li>Circuito hamiltoniano (NP completo en general), teoremas de Ore / Dirac</li>
-  <li>Representación de grafos en memoria</li>
+  <li>Circuito hamiltoniano, teoremas de Ore / Dirac</li>
+ </ul>
+<h3>Representaciones</h3>
+ <ul>
   <li>Matriz de Adyacencia</li>
   <li>Matriz de Incidencia</li>
   <li>Listas de Adyacencia</li>
@@ -50,92 +56,80 @@ Lista de temas para IOI/ICPC
  </ul>
 <h3>BFS</h3>
  <ul>
-  <li>Basico.</li>
+  <li>Algoritmo basico.</li>
   <li>BFS con cola de dos puntas [Aristas 0 y 1]</li>
   <li>BFS con K+1 bolsas [aristas 0..K]</li>
  </ul>
 <h3>DFS</h3>
  <ul>
-  <li>Con stack</li>
-  <li>Recursivo</li>
-  <li>Back Edges</li>
-  <li>Tree Edges</li>
-  <li>Forward Edges</li>
-  <li>Cross Edges</li>
+  <li>Implementacion con stack</li>
+  <li>Implementacion recursiva</li>
+  <li>Clasificacion de aristas en grafo no-dirigido ({tree,back}-edges)</li>
+  <li>Clasificacion de aristas en grafo dirigido ({tree,back,forward,cross}-edges)</li>
+  <li>Ordenamiento Topologico</li>
+  <li>Clausura transitiva</li>
+  <li>Componentes Fuertemente Conexas</li>
+  <li>Deteccion de puntos de articulacion y puentes</li>
+  <li>Componentes Biconexas</li>
+  <li>Block-cut tree</li>
  </ul>
-<h3>Dijkstra</h3>
+<h3>Caminos minimos</h3>
  <ul>
-  <li>En N^2</li>
-  <li>En (N + M) lg N</li>
+  <li>Dijkstra en N^2</li>
+  <li>Dijkstra en (N + M) log N</li>
   <li>Distancia Min-Max (Prim)</li>
+  <li>Bellman-Ford y su implementacion tipica.</li>
+  <li>Bellman-Ford como programacion dinamica.</li>
+  <li>Bellman-Ford para contar caminos entre pares de nodos.</li>
+  <li>Bellman-Ford, deteccion y tratamiento de ciclos negativos</li>
+  <li>Floyd-Warshall Vision como programacion dinamica.</li>
+  <li>Floyd-Warshall y su implementacion tipica.</li>
+  <li>Floyd-Warshall, para contar caminos entre pares de nodos.</li>
+  <li>Floyd-Warshall como producto de matrices de adyacencia / Potencias de la matriz de adyacencia.</li>
+  <li>Floyd-Warshall, eteccion y tratamiento de ciclos negativos</li>
+  <li>Reconstruir caminos</li>
+  <li>Reconstruir caminos</li>
  </ul>
-<h3>Bellman-Ford</h3>
+<h3>Arbol recubridor minimo</h3>
  <ul>
-  <li>Vision como programacion dinamica.</li>
-  <li>Implementacion tipica.</li>
-  <li>Variante para contar caminos entre pares de nodos.</li>
-  <li>Deteccion y tratamiento de ciclos negativos</li>
- </ul>
-<h3>Floyd-Warshall</h3>
- <ul>
-  <li>Vision como programacion dinamica.</li>
-  <li>Implementacion tipica.</li>
-  <li>Variante para contar caminos entre pares de nodos.</li>
-  <li>Producto de matrices de adyacencia / Potencias de la matriz de adyacencia.</li>
-  <li>Deteccion y tratamiento de ciclos negativos</li>
- </ul>
-<h3>Reconstruir caminos</h3>
- <ul>
-  <li>Guardando padres</li>
-  <li>Chequeando la cuentita de la DP</li>
- </ul>
-<h3>Kruskal</h3>
- <ul>
-  <li>Descripción e implementación, con referencia a Union-Find</li>
+  <li>Kruskal</li>
   <li>Relación del Minimum Spanning Tree con la distancia Min-Max.</li>
   <li>Aplicación a calcular la distancia min-max todos contra todos en N^2</li>
   <li>Solución alternativa para el mismo problema: hacerlo en el mismo Kruskal que calcula el MST</li>
  </ul>
 <h3>Flujo y derivados</h3>
  <ul>
-  <li>Matching Maximo Bipartito O(VE)</li>
-  <li>Flujo Maximo / Corte Minimo</li>
-  <li>Edmonds-Karp</li>
-  <li>Dinitz</li>
+  <li>Algoritmo de Khun -- Matching Maximo Bipartito O(VE)</li>
+  <li>Modelado de problemas con flujo maximo</li>
+  <li>Modelado de problemas con corte minimo, dualidad con flujo maximo</li>
+  <li>Algoritmo de Edmonds-Karp</li>
+  <li>Algoritmo de Dinitz</li>
   <li>Algoritmos de Preflow-Push</li>
-  <li>Manejo, entendimiento y manipulación de la red residual de un grafo.</li>
+  <li>Manejo de la red residual de un grafo.</li>
   <li>Teoremas de König, Hall y Menger.</li>
   <li>Mínimo Cubrimiento por Caminos. Mínima Partición en Caminos. Teorema de Dilworth</li>
-  <li>Flujo de costo minimo.</li>
-  <li>Vertex cover / Independent set en grafo bipartito</li>
- </ul>
-<h3>DAGs</h3>
- <ul>
-  <li>Ordenamiento Topologico</li>
-  <li>Clausura transitiva (aplica a cualquier grafo pero es muy común en DAGs)</li>
-  <li>Componentes Biconexas (Puntos de articulación, puentes)</li>
-  <li>Componentes Fuertemente Conexas</li>
-  <li>Camino/Ciclo euleriano</li>
+  <li>Min-cost max-flow</li>
+  <li>min vertex cover / max independent set en grafo bipartito</li>
  </ul>
 <h3>Árboles</h3>
  <ul>
-  <li>Detección,recorrido.</li>
+  <li>Detección, recorrido.</li>
   <li>Representación de arbol con raiz: Padre de cada nodo</li>
-  <li>Representación de arbol con raiz:Lista de adyacencia del dirigido "bajando desde la raíz".</li>
+  <li>Representación de arbol con raiz: Lista de adyacencia del dirigido "bajando desde la raíz".</li>
   <li>Radio, centro y diámetro de un árbol en tiempo lineal.</li>
  </ul>
 <h3>Grafos planares</h3>
  <ul>
   <li>Fórmula de Euler</li>
   <li>Los grafos planares son ralos</li>
-  <li>Dualidad</li>
-  <li>Construir Grafo dual de un grafo planar (dado el embedding)</li>
   <li>Max-clique en grafo planar</li>
+  <li>Grafo dual</li>
+  <li>Construir Grafo dual de un grafo planar (dado el embedding)</li>
  </ul>
 </details>
 
 <details>
- <summary>Análisis de complejidad</summary>
+ <summary>Complejidad computacional</summary>
  <ul>
   <li>Entendimiento de la notacion asintotica (La O grande de "O(N)")</li>
   <li>Analisis amortizado de complejidad</li>
@@ -148,7 +142,8 @@ Lista de temas para IOI/ICPC
 <details>
  <summary>Ordenamiento</summary>
  <ul>
-  <li>Busqueda lineal y busqueda binaria (con LA RECETA)</li>
+  <li>Busqueda lineal</li>
+  <li>Busqueda binaria (con LA RECETA)</li>
   <li>Counting Sort</li>
   <li>MergeSort</li>
   <li>QuickSort</li>
@@ -162,30 +157,47 @@ Lista de temas para IOI/ICPC
 
 <details>
  <summary>Estructuras de datos</summary>
+<h3>Básicas</h3>
  <ul>
   <li>Arreglos</li>
-  <li>STL (set, multiset, map, multimap, vector, queue, stack, deque, priority\_queue, list, etc)</li>
-  <li>Policy based data structures de GCC (en especial indexed\_set)</li>
   <li>Listas enlazadas</li>
   <li>Colas</li>
   <li>Pilas</li>
-  <li>Tries</li>
-  <li>Hashing</li>
-  <li>Tablas Aditivas (prefix sums)</li>
-  <li>Binary Index Tree (Fenwick Tree)</li>
-  <li>Árbol binario de búsqueda</li>
+ </ul>
+<h3>C++</h3>
+ <ul>
+  <li>STL (set, multiset, map, multimap, vector, queue, stack, deque, priority\_queue, list, etc)</li>
+  <li>Policy based data structures de GCC (en especial indexed\_set)</li>
+ </ul>
+<h3>Árboles</h3>
+ <ul>
+  <li>Árboles con raíz generales</li>
+  <li>Árbol binario de búsqueda (ABB)</li>
   <li>ABB balanceado (por ej, Treap)</li>
   <li>Heap (para priority queue), heapsort, heapify en O(N)</li>
+  <li>Tries</li>
+ </ul>
+<h3>Consultas sobre arreglos</h3>
+ <ul>
+  <li>Tablas Aditivas (prefix sums)</li>
+  <li>Binary Index Tree (Fenwick Tree)</li>
   <li>Union Find (Implementacion con listas y con arbol)</li>
   <li>RMQ (Segment tree sobre arreglo)</li>
   <li>Sliding Windows, Sliding-RMQ (para en O(N) calcular el RMQ de subarreglos de un tamaño K dado)</li>
+  <li>RMQ/Fenwick 2D</li>
+ </ul>
+<h3>Consultas sobre árboles</h3>
+ <ul>
   <li>Binary lifting en árbol con raíz</li>
   <li>LCA en O(lg n) mediante Euler Tour + RMQ</li>
   <li>LCA en O(lg n) mediante binary lifting</li>
   <li>Distancias en un arbol en O(log N) con LCA</li>
-  <li>Estructuras de datos persistentes (con path copying)</li>
-  <li>RMQ/Fenwick 2D</li>
   <li>Heavy Light Decomposition</li>
+ </ul>
+<h3>Varias</h3>
+ <ul>
+  <li>Tabla hash</li>
+  <li>Estructuras de datos persistentes (con path copying)</li>
   <li>Estructuras de datos para arboles dinamicos (link-cut trees)</li>
   <li>Principio small-to-large</li>
  </ul>
@@ -206,10 +218,17 @@ Lista de temas para IOI/ICPC
 <details>
  <summary>Strings</summary>
  <ul>
-  <li>Knuth Morris Pratt (KMP), y su tablita de bordes.</li>
+  <li>Algoritmo KMP, y que significa su tablita.</li>
+  <li>Z-Array</li>
   <li>Rabin-Karp, y uso del concepto de hash en general.</li>
   <li>xor-hashing y sum-hashing con una tabla de números aleatorios</li>
   <li>Suffix Array (Algoritmo de Larsson y Sadakane), LCP</li>
+  <li>Matching con automatas deterministas y no deterministas (dado un automata ya hecho)</li>
+  <li>Suffix Tree</li>
+  <li>Suffix Automaton</li>
+  <li>Automata de Aho-Corasick (version multicadena de KMP)</li>
+  <li>Algoritmo de Manacher (tabla de radio de palindromos)</li>
+  <li>Factorización de Lyndon (Mínima factorización en rotaciones mínimas)</li>
  </ul>
 </details>
 
@@ -235,6 +254,7 @@ Lista de temas para IOI/ICPC
 
 <details>
  <summary>Matemática</summary>
+<h3>Analisis numérico</h3>
  <ul>
   <li>Punto flotante: Conocerlos, saber que existe el error, cuentitas basicas, uso de EPSILON en los if</li>
   <li>Operaciones aritmeticas con enteros de longitud arbitraria</li>
@@ -252,7 +272,7 @@ Lista de temas para IOI/ICPC
  <ul>
   <li>Relacion entre combinatoria y probabilidad</li>
   <li>Principios de la suma y del producto</li>
-  <li>Coeficientes binomiales / triangulo de pascal</li>
+  <li>Coeficientes binomiales / triangulo de Pascal</li>
   <li>Bolitas y palitos</li>
   <li>Inclusion-exclusion</li>
   <li>Linealidad de la esperanza / técnica "contribution to the sum"</li>
@@ -271,7 +291,7 @@ Lista de temas para IOI/ICPC
   <li>Teorema Chino del Resto</li>
   <li>Producto de matrices</li>
   <li>Chequeo de primalidad raiz(N)</li>
-  <li>Criba de eratostenes</li>
+  <li>Criba de Eratostenes</li>
   <li>Chequeo de primalidad eficiente probabilistico (Miller-Rabin)</li>
   <li>Orden de un elemento en (N_p,*), raices primitivas</li>
   <li>Funcion phi de Euler</li>
@@ -316,7 +336,12 @@ Lista de temas para IOI/ICPC
   <li>Par de puntos mas cercano en O(n lg n)</li>
   <li>Strassen</li>
   <li>Karatsuba</li>
-  <li>Greedies</li>
+ </ul>
+</details>
+
+<details>
+ <summary>Greedies</summary>
+ <ul>
   <li>Dar vuelto usando una cantidad minima de monedas</li>
   <li>Ordenamiento de trabajos con distintos tiempos de ejecución para minimizar el tiempo de finalización promedio.</li>
   <li>Optimo cubrimiento de intervalo por subintervalos.</li>
