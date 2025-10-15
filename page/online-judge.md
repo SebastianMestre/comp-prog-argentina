@@ -17,4 +17,7 @@ automaticamente.
 - [OIA Juez]( https://juez.oia.unsam.edu.ar/ )
 - [CSES]( https://cses.fi/problemset/ )
 - [USACO Guide]( https://usaco.guide/problems/ )
+- [Sphere Online Judge]( https://www.spoj.com/ )
+- [Online Judge]( https://onlinejudge.org/ ) - Version renovada del antiguo juez UVa
 - <https://oj.uz/problems/>
+- [CodeBreaker]( https://codebreaker.xyz/ ) - Plataforma oficial de la *Singapore Informatics Olympiad*
