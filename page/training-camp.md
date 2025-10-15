@@ -5,3 +5,4 @@ donde se imparten clases y se realizan simulacros de competencia todos los dias.
 
 - [Training Camp Argentina]( https://icpc.com.ar/tc/ )
 - [Brazilian ICPC Summer School]( https://maratona.ic.unicamp.br/ )
+- Existe tambien el Training Camp Jujuy, pero no tiene sitio web
