@@ -8,6 +8,7 @@
 - [Material teórico]( page/material )
 - [Temario]( page/temario )
 - [Notebooks]( page/notebook )
+- [Comunidades]( page/comunidades )
 - [Otros]( page/misc )
 
 ## Para coaches
