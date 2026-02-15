@@ -86,13 +86,13 @@ Lista de temas para IOI/ICPC
   <li>Floyd-Warshall y su implementacion tipica.</li>
   <li>Floyd-Warshall, para contar caminos entre pares de nodos.</li>
   <li>Floyd-Warshall como producto de matrices de adyacencia / Potencias de la matriz de adyacencia.</li>
-  <li>Floyd-Warshall, eteccion y tratamiento de ciclos negativos</li>
-  <li>Reconstruir caminos</li>
-  <li>Reconstruir caminos</li>
+  <li>Floyd-Warshall, deteccion y tratamiento de ciclos negativos</li>
+  <li>Reconstruir caminos Guardando padres</li>
+  <li>Reconstruir caminos Chequeando la cuentita de la DP</li>
  </ul>
 <h3>Arbol recubridor minimo</h3>
  <ul>
-  <li>Kruskal</li>
+  <li>Kruskal y su implementación tipica con Union-Find</li>
   <li>Relación del Minimum Spanning Tree con la distancia Min-Max.</li>
   <li>Aplicación a calcular la distancia min-max todos contra todos en N^2</li>
   <li>Solución alternativa para el mismo problema: hacerlo en el mismo Kruskal que calcula el MST</li>

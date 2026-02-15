@@ -42,10 +42,10 @@ Grafos	Caminos minimos	Floyd-Warshall Vision como programacion dinamica.
 Grafos	Caminos minimos	Floyd-Warshall y su implementacion tipica.
 Grafos	Caminos minimos	Floyd-Warshall, para contar caminos entre pares de nodos.
 Grafos	Caminos minimos	Floyd-Warshall como producto de matrices de adyacencia / Potencias de la matriz de adyacencia.
-Grafos	Caminos minimos	Floyd-Warshall, eteccion y tratamiento de ciclos negativos
-Grafos	Caminos minimos	Reconstruir caminos	Guardando padres
-Grafos	Caminos minimos	Reconstruir caminos	Chequeando la cuentita de la DP
-Grafos	Arbol recubridor minimo	Kruskal	y su implementación tipica con Union-Find
+Grafos	Caminos minimos	Floyd-Warshall, deteccion y tratamiento de ciclos negativos
+Grafos	Caminos minimos	Reconstruir caminos Guardando padres
+Grafos	Caminos minimos	Reconstruir caminos Chequeando la cuentita de la DP
+Grafos	Arbol recubridor minimo	Kruskal y su implementación tipica con Union-Find
 Grafos	Arbol recubridor minimo	Relación del Minimum Spanning Tree con la distancia Min-Max.
 Grafos	Arbol recubridor minimo	Aplicación a calcular la distancia min-max todos contra todos en N^2
 Grafos	Arbol recubridor minimo	Solución alternativa para el mismo problema: hacerlo en el mismo Kruskal que calcula el MST
