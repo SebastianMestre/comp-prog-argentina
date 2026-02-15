@@ -272,8 +272,12 @@ Lista de temas para IOI/ICPC
  <ul>
   <li>Relacion entre combinatoria y probabilidad</li>
   <li>Principios de la suma y del producto</li>
+  <li>Biyecciones</li>
+  <li>Idea de contar el complemento</li>
   <li>Coeficientes binomiales / triangulo de Pascal</li>
   <li>Bolitas y palitos</li>
+  <li>Definir conjuntos "inductivamente" (contar cosas usando "DP")</li>
+  <li>Problemas estilo rank/unrank</li>
   <li>Inclusion-exclusion</li>
   <li>Linealidad de la esperanza / técnica "contribution to the sum"</li>
   <li>Distribución de la suma de dos variables aleatorias (convolucion)</li>
@@ -284,15 +288,22 @@ Lista de temas para IOI/ICPC
  </ul>
 <h3>Teoría de números</h3>
  <ul>
-  <li>Teorema fundamental de la aritmetica</li>
+  <li>Definiciones: divisor, multiplo</li>
+  <li>Definiciones: numero primo</li>
+  <li>Representación de un número como dígitos en base b (reglas de divisibilidad)</li>
+  <li>Chequeo de primalidad en tiempo raiz(N)</li>
+  <li>Criba de Eratóstenes</li>
+  <li>Teorema fundamental de la aritmética (trabajar con números usando su factorización)</li>
   <li>Aritmetica modular</li>
-  <li>MCD (Algoritmo de euclides)</li>
-  <li>Inverso Modular (Con euclides extendido o con pequeño teorema de Fermat)</li>
+  <li>Definiciones: numeros coprimos</li>
+  <li>Mayor común divisor y el algoritmo de Euclides</li>
+  <li>Pequeño teorema de Fermat</li>
+  <li>Algoritmo de Euclides extendido y los coeficientes de Bezout</li>
+  <li>Inverso multiplicativo en modulo (Con Euclides extendido o con pequeño teorema de Fermat)</li>
   <li>Teorema Chino del Resto</li>
   <li>Producto de matrices</li>
-  <li>Chequeo de primalidad raiz(N)</li>
-  <li>Criba de Eratostenes</li>
   <li>Chequeo de primalidad eficiente probabilistico (Miller-Rabin)</li>
+  <li>Factorización eficiente probabilisica (Pollard's rho)</li>
   <li>Orden de un elemento en (N_p,*), raices primitivas</li>
   <li>Funcion phi de Euler</li>
   <li>Funciones multiplicativas, función de Mobius</li>

@@ -151,8 +151,12 @@ Matemática	Álgebra	Calculo de determinantes, matriz inversa (algoritmo de Gaus
 Matemática	Álgebra	Funciones generatrices
 Matemática	Combinatoria y Probabilidad	Relacion entre combinatoria y probabilidad
 Matemática	Combinatoria y Probabilidad	Principios de la suma y del producto
+Matemática	Combinatoria y Probabilidad	Biyecciones
+Matemática	Combinatoria y Probabilidad	Idea de contar el complemento
 Matemática	Combinatoria y Probabilidad	Coeficientes binomiales / triangulo de Pascal
 Matemática	Combinatoria y Probabilidad	Bolitas y palitos
+Matemática	Combinatoria y Probabilidad	Definir conjuntos "inductivamente" (contar cosas usando "DP")
+Matemática	Combinatoria y Probabilidad	Problemas estilo rank/unrank
 Matemática	Combinatoria y Probabilidad	Inclusion-exclusion
 Matemática	Combinatoria y Probabilidad	"Linealidad de la esperanza / técnica ""contribution to the sum"""
 Matemática	Combinatoria y Probabilidad	Distribución de la suma de dos variables aleatorias (convolucion)
@@ -160,15 +164,22 @@ Matemática	Combinatoria y Probabilidad	Convolucion rápida usando FFT
 Matemática	Combinatoria y Probabilidad	Números de Catalan
 Matemática	Combinatoria y Probabilidad	Cadenas de Markov
 Matemática	Combinatoria y Probabilidad	Young Tableaux
-Matemática	Teoría de números	Teorema fundamental de la aritmetica
+Matemática	Teoría de números	Definiciones: divisor, multiplo
+Matemática	Teoría de números	Definiciones: numero primo
+Matemática	Teoría de números	Representación de un número como dígitos en base b (reglas de divisibilidad)
+Matemática	Teoría de números	Chequeo de primalidad en tiempo raiz(N)
+Matemática	Teoría de números	Criba de Eratóstenes
+Matemática	Teoría de números	Teorema fundamental de la aritmética (trabajar con números usando su factorización)
 Matemática	Teoría de números	Aritmetica modular
-Matemática	Teoría de números	MCD (Algoritmo de euclides)
-Matemática	Teoría de números	Inverso Modular (Con euclides extendido o con pequeño teorema de Fermat)
+Matemática	Teoría de números	Definiciones: numeros coprimos
+Matemática	Teoría de números	Mayor común divisor y el algoritmo de Euclides
+Matemática	Teoría de números	Pequeño teorema de Fermat
+Matemática	Teoría de números	Algoritmo de Euclides extendido y los coeficientes de Bezout
+Matemática	Teoría de números	Inverso multiplicativo en modulo (Con Euclides extendido o con pequeño teorema de Fermat)
 Matemática	Teoría de números	Teorema Chino del Resto
 Matemática	Teoría de números	Producto de matrices
-Matemática	Teoría de números	Chequeo de primalidad raiz(N)
-Matemática	Teoría de números	Criba de Eratostenes
 Matemática	Teoría de números	Chequeo de primalidad eficiente probabilistico (Miller-Rabin)
+Matemática	Teoría de números	Factorización eficiente probabilisica (Pollard's rho)
 Matemática	Teoría de números	Orden de un elemento en (N_p,*), raices primitivas
 Matemática	Teoría de números	Funcion phi de Euler
 Matemática	Teoría de números	Funciones multiplicativas, función de Mobius
