@@ -276,7 +276,7 @@ Lista de temas para IOI/ICPC
   <li>Idea de contar el complemento</li>
   <li>Coeficientes binomiales / triangulo de Pascal</li>
   <li>Bolitas y palitos</li>
-  <li>Definir conjuntos "inductivamente" (contar cosas usando "DP")</li>
+  <li>Definir conjuntos inductivamente (contar cosas usando "DP")</li>
   <li>Problemas estilo rank/unrank</li>
   <li>Inclusion-exclusion</li>
   <li>Linealidad de la esperanza / técnica "contribution to the sum"</li>
